@@ -1,0 +1,53 @@
+{% extends 'store_app/base.html' %}
+{% block content %}
+
+<div id="lg2" class="tab-pane">
+    <div class="login-form-container">
+        <div class="login-register-form">
+    <h3>Update Your Profile</h3>
+    <div class="login">
+        <div class="login_form_container">
+            <div class="account_login_form">
+                <form action="{% url 'profile_update' %}" method="post">
+                    {% csrf_token %}
+
+                    <div class="default-form-box mb-20">
+                        <label>Username</label>
+                        <input type="text" name="username" placeholder="Username" value="{{user.username}}"/>
+                    </div>
+                    
+                    
+                    <div class="default-form-box mb-20">
+                        <label>First Name</label>
+                        <input type="text" name="first_name" placeholder="First Name" value="{{user.first_name}}"/>
+                    </div>
+                    <div class="default-form-box mb-20">
+                        <label>Last Name</label>
+                        <input type="text" name="last_name" placeholder="Last Name" value="{{user.last_name}}"/>
+
+                    </div>
+                    <div class="default-form-box mb-20">
+                        <label>Email</label>
+                        <input name="email" placeholder="Email" type="email" value="{{user.email}}"/>
+
+                    </div>
+                    <div class="default-form-box mb-20">
+                        <label>Password</label>
+                        <input type="password" name="pass1" placeholder="Password" value="{{user.pass1}}"/>
+                    </div>
+                    
+                    
+                    
+                    <div class="save_button mt-3">
+                        <button class="btn" type="submit">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+{% endblock %}
