@@ -276,3 +276,4 @@ def WISHLIST(request):
 def Aboutus(request):
 
     return render(request, 'store_app/aboutus.html')
+

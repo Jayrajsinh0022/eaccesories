@@ -82,13 +82,14 @@
                             
                         </ul>
                     </div>
-                    {% comment %} <div class="pro-details-quality">
+                    <div class="pro-details-quality">
                         <div class="cart-plus-minus">
                             <input class="cart-plus-minus-box" type="text" name="qtybutton" value="1" />
                         </div>
                         <div class="pro-details-cart">
-                            <button class="add-cart"><a href="{% url 'cart_add' i.id%}"> Add To
-                                Cart</button></a>
+                            <a href="{% url 'cart_add' prod.id%}">
+                                <button class="add-cart">Add To Cart</button>
+                            </a>
                         </div>
                         <div class="pro-details-compare-wishlist pro-details-wishlist ">
                             <a href="wishlist.html"><i class="pe-7s-like"></i></a>
@@ -97,7 +98,7 @@
                             <a href="compare.html"><i class="pe-7s-refresh-2"></i></a>
                         </div>
                     </div>
-                </div> {% endcomment %}
+                </div> 
                 <!-- product details description area start -->
                 <div class="description-review-wrapper">
                     <div class="description-review-topbar nav">

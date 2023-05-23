@@ -144,8 +144,8 @@
                                         <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist-{{forloop.counter}}"><i
                                                 class="pe-7s-like"></i></button>
                                         <button class="action quickview" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#exampleModal-{{forloop.counter}}"><i class="pe-7s-look"></i></button>
-                                        <button class="action compare" title="Compare" data-bs-toggle="modal" data-bs-target="#exampleModal-Compare"><i
-                                                class="pe-7s-refresh-2"></i></button>
+                                        {% comment %} <button class="action compare" title="Compare" data-bs-toggle="modal" data-bs-target="#exampleModal-Compare"><i
+                                                class="pe-7s-refresh-2"></i></button> {% endcomment %}
                                     </div>
                         </div>
                     </div>
@@ -178,8 +178,7 @@
                 <div class="single-banner">
                     <img src="{% static 'assets/images/banner/9.webp' %}" alt="">
                     <div class="banner-content nth-child-2">
-                        <h3 class="title">Smart Watch For <br>
-                                Your Hand</h3>
+                        <h3 class="title">Bluetooth Speaker <br></h3>
                         <span class="category">From Rs.1999</span>
                         <a href="{% url 'product' %}" class="shop-link">Shop Now <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
